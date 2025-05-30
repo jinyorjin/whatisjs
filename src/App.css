@@ -1,0 +1,93 @@
+.presentation-container {
+  max-width: 850px;
+  margin: 50px auto;
+  padding: 40px;
+  background: linear-gradient(135deg, #fff9c4, #fffde7); /* 노란 배경 */
+  border-radius: 30px;
+  box-shadow: 0 20px 40px rgba(255, 214, 0, 0.2);
+  font-family: "Baloo 2", cursive;
+  position: relative;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* 슬라이드 제목 */
+.slide h1 {
+  font-size: 2.8rem;
+  color: #fbc02d;
+  text-shadow: 1px 1px 3px rgba(255, 200, 0, 0.4);
+  border-bottom: 4px dashed #fdd835;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+/* 코드 블록 */
+.code-block {
+  background-color: #fff3cd;
+  color: #6d4c41;
+  font-family: "Fira Code", monospace;
+  padding: 20px;
+  border-radius: 15px;
+  white-space: pre-wrap;
+  border-left: 6px solid #fbc02d;
+  margin-top: 20px;
+}
+
+.slide-note {
+  background-color: #fffde7;
+  padding: 12px 18px;
+  border-left: 6px solid #ffee58;
+  border-radius: 12px;
+  margin-top: 20px;
+  color: #7c6f00;
+}
+
+.navigation button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(45deg, #ffe082, #fdd835);
+  color: #5d4037;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 5px 10px rgba(253, 216, 53, 0.3);
+}
+
+.navigation button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(45deg, #fff176, #fbc02d);
+}
+
+.slide-counter {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  background: #fff8e1;
+  padding: 8px 14px;
+  border-radius: 25px;
+  color: #f57f17;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.corner-lottie {
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  width: 250px;
+  height: 250px;
+  z-index: 110;
+  pointer-events: none;
+  opacity: 0.9;
+}
